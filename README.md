@@ -46,11 +46,11 @@ npm install
 Crea un archivo `.env` en `Backend/` (ya existe uno de ejemplo; ajusta los valores):
 
 ```env
-DB_PORT=3306
-DB_HOST=localhost
-DB_USER=root
-DB_PASSWORD=1234
-DB_NAME=moviesdb
+DB_PORT=***
+DB_HOST=***
+DB_USER=****
+DB_PASSWORD=****
+DB_NAME=****
 
 PORT=3000
 ```
