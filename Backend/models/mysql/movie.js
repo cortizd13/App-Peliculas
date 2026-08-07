@@ -1,0 +1,37 @@
+import mysql from 'mysql2/promise'
+import { configLocal } from '../../config/db.js'
+
+const connection = await mysql.createConnection(configLocal)
+
+export class MovieModel {
+  static async getAll ({ genre, title }) {
+    if (genre) {
+      const lowerGenre = genre.toLowerCase()
+
+      const [genres] = await connection.query('select bin_to_uuid(id) as id, title, year, genre, director, duration,rating,poster from movies  where lower(genre) = ?', [lowerGenre])
+
+      if (genres.length === 0) return []
+
+      return genres
+    }
+
+    if (title) {
+      const lowerTitle = title.toLowerCase()
+
+      const [titles] = await connection.query('select bin_to_uuid(id) as id, title, year, genre, director, duration,rating,poster from movies  where lower(title) = ?', [lowerTitle])
+
+      if (titles.length === 0) return []
+
+      return titles
+    }
+
+    const [movies] = await connection.query('select bin_to_uuid(id) as id, title, year, genre, director, duration,rating,poster from movies ')
+    return movies
+  }
+
+  static async getById ({ id }) {
+    const [movies] = await connection.query('select bin_to_uuid(id) as id, title, year, genre, director, duration,rating,poster from movies where BIN_TO_UUID(id) = ?', [id])
+
+    return movies
+  }
+}

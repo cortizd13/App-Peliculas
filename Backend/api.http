@@ -1,0 +1,5 @@
+### Obtener películas
+GET http://localhost:3000/movies
+
+###Obtener pelicula por id
+GET http://localhost:3000/movies/674012cf-91e2-11f1-bd7b-50bbb59bfdba

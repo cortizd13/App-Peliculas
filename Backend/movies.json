@@ -1,0 +1,472 @@
+
+[
+    {
+      "id": 1,
+      "title": "El Padrino",
+      "year": 1972,
+      "genre": "Drama",
+      "director": "Francis Ford Coppola",
+      "duration": 175,
+      "rating": 9.2,
+      "poster": "https://www.themoviedb.org/t/p/w1280/3bhkrj58Vtu7enYsRolD1fZdja1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Pulp Fiction",
+      "year": 1994,
+      "genre": "Crime",
+      "director": "Quentin Tarantino",
+      "duration": 154,
+      "rating": 8.9,
+      "poster": "https://www.themoviedb.org/t/p/w1280/vQWk5YBFWF4bZaofAbv0tShwBvQ.jpg"
+    },
+    {
+      "id": 3,
+      "title": "El Caballero de la Noche",
+      "year": 2008,
+      "genre": "Action",
+      "director": "Christopher Nolan",
+      "duration": 152,
+      "rating": 9.0,
+      "poster": "https://example.com/posters/caballero-noche.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Forrest Gump",
+      "year": 1994,
+      "genre": "Drama",
+      "director": "Robert Zemeckis",
+      "duration": 142,
+      "rating": 8.8,
+      "poster": "https://example.com/posters/forrest-gump.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Inception",
+      "year": 2010,
+      "genre": "Sci-Fi",
+      "director": "Christopher Nolan",
+      "duration": 148,
+      "rating": 8.8,
+      "poster": "https://media.themoviedb.org/t/p/w220_and_h330_face/sNxqwtyHMNQwKWoFYDqcYTui5Ok.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Matrix",
+      "year": 1999,
+      "genre": "Sci-Fi",
+      "director": "Lana y Lilly Wachowski",
+      "duration": 136,
+      "rating": 8.7,
+      "poster": "https://example.com/posters/matrix.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Los Siete Samuráis",
+      "year": 1954,
+      "genre": "Adventure",
+      "director": "Akira Kurosawa",
+      "duration": 207,
+      "rating": 8.6,
+      "poster": "https://example.com/posters/siete-samurais.jpg"
+    },
+    {
+      "id": 8,
+      "title": "El Señor de los Anillos: El Retorno del Rey",
+      "year": 2003,
+      "genre": "Fantasy",
+      "director": "Peter Jackson",
+      "duration": 201,
+      "rating": 9.0,
+      "poster": "https://example.com/posters/retorno-del-rey.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Goodfellas",
+      "year": 1990,
+      "genre": "Crime",
+      "director": "Martin Scorsese",
+      "duration": 145,
+      "rating": 8.7,
+      "poster": "https://example.com/posters/goodfellas.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Interstellar",
+      "year": 2014,
+      "genre": "Sci-Fi",
+      "director": "Christopher Nolan",
+      "duration": 169,
+      "rating": 8.6,
+      "poster": "https://example.com/posters/interstellar.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Fight Club",
+      "year": 1999,
+      "genre": "Drama",
+      "director": "David Fincher",
+      "duration": 139,
+      "rating": 8.8,
+      "poster": "https://example.com/posters/fight-club.jpg"
+    },
+    {
+      "id": 12,
+      "title": "La La Land",
+      "year": 2016,
+      "genre": "Musical",
+      "director": "Damien Chazelle",
+      "duration": 128,
+      "rating": 8.0,
+      "poster": "https://example.com/posters/la-la-land.jpg"
+    },
+    {
+      "id": 13,
+      "title": "Parásitos",
+      "year": 2019,
+      "genre": "Thriller",
+      "director": "Bong Joon-ho",
+      "duration": 132,
+      "rating": 8.5,
+      "poster": "https://example.com/posters/parasitos.jpg"
+    },
+    {
+      "id": 14,
+      "title": "Gladiador",
+      "year": 2000,
+      "genre": "Action",
+      "director": "Ridley Scott",
+      "duration": 155,
+      "rating": 8.5,
+      "poster": "https://example.com/posters/gladiador.jpg"
+    },
+    {
+      "id": 15,
+      "title": "El Rey León",
+      "year": 1994,
+      "genre": "Animation",
+      "director": "Roger Allers, Rob Minkoff",
+      "duration": 88,
+      "rating": 8.5,
+      "poster": "https://example.com/posters/rey-leon.jpg"
+    },
+    {
+      "id": 16,
+      "title": "Titanic",
+      "year": 1997,
+      "genre": "Romance",
+      "director": "James Cameron",
+      "duration": 195,
+      "rating": 7.9,
+      "poster": "https://example.com/posters/titanic.jpg"
+    },
+    {
+      "id": 17,
+      "title": "Coco",
+      "year": 2017,
+      "genre": "Animation",
+      "director": "Lee Unkrich, Adrian Molina",
+      "duration": 105,
+      "rating": 8.4,
+      "poster": "https://example.com/posters/coco.jpg"
+    },
+    {
+      "id": 18,
+      "title": "Whiplash",
+      "year": 2014,
+      "genre": "Drama",
+      "director": "Damien Chazelle",
+      "duration": 106,
+      "rating": 8.5,
+      "poster": "https://example.com/posters/whiplash.jpg"
+    },
+    {
+      "id": 19,
+      "title": "El Origen de los Guardianes",
+      "year": 2012,
+      "genre": "Animation",
+      "director": "Peter Ramsey",
+      "duration": 97,
+      "rating": 7.3,
+      "poster": "https://example.com/posters/origen-guardianes.jpg"
+    },
+    {
+      "id": 20,
+      "title": "Django Desencadenado",
+      "year": 2012,
+      "genre": "Western",
+      "director": "Quentin Tarantino",
+      "duration": 165,
+      "rating": 8.4,
+      "poster": "https://example.com/posters/django.jpg"
+    },
+    {
+      "id": 21,
+      "title": "Toy Story",
+      "year": 1995,
+      "genre": "Animation",
+      "director": "John Lasseter",
+      "duration": 81,
+      "rating": 8.3,
+      "poster": "https://example.com/posters/toy-story.jpg"
+    },
+    {
+      "id": 22,
+      "title": "El Silencio de los Inocentes",
+      "year": 1991,
+      "genre": "Thriller",
+      "director": "Jonathan Demme",
+      "duration": 118,
+      "rating": 8.6,
+      "poster": "https://example.com/posters/silencio-inocentes.jpg"
+    },
+    {
+      "id": 23,
+      "title": "Braveheart",
+      "year": 1995,
+      "genre": "Historical Drama",
+      "director": "Mel Gibson",
+      "duration": 178,
+      "rating": 8.3,
+      "poster": "https://example.com/posters/braveheart.jpg"
+    },
+    {
+      "id": 24,
+      "title": "Amélie",
+      "year": 2001,
+      "genre": "Romantic Comedy",
+      "director": "Jean-Pierre Jeunet",
+      "duration": 122,
+      "rating": 8.3,
+      "poster": "https://example.com/posters/amelie.jpg"
+    },
+    {
+      "id": 25,
+      "title": "Spider-Man: Un Nuevo Universo",
+      "year": 2018,
+      "genre": "Animation",
+      "director": "Bob Persichetti, Peter Ramsey, Rodney Rothman",
+      "duration": 117,
+      "rating": 8.4,
+      "poster": "https://example.com/posters/spiderman-universo.jpg"
+    },
+    {
+      "id": 26,
+      "title": "Blade Runner 2049",
+      "year": 2017,
+      "genre": "Sci-Fi",
+      "director": "Denis Villeneuve",
+      "duration": 164,
+      "rating": 8.0,
+      "poster": "https://example.com/posters/blade-runner-2049.jpg"
+    },
+    {
+      "id": 27,
+      "title": "Her",
+      "year": 2013,
+      "genre": "Romance",
+      "director": "Spike Jonze",
+      "duration": 126,
+      "rating": 8.0,
+      "poster": "https://example.com/posters/her.jpg"
+    },
+    {
+      "id": 28,
+      "title": "Mad Max: Furia en el Camino",
+      "year": 2015,
+      "genre": "Action",
+      "director": "George Miller",
+      "duration": 120,
+      "rating": 8.1,
+      "poster": "https://example.com/posters/mad-max-furia.jpg"
+    },
+    {
+      "id": 29,
+      "title": "El Gran Hotel Budapest",
+      "year": 2014,
+      "genre": "Comedy",
+      "director": "Wes Anderson",
+      "duration": 99,
+      "rating": 8.1,
+      "poster": "https://example.com/posters/grand-budapest.jpg"
+    },
+    {
+      "id": 30,
+      "title": "Joker",
+      "year": 2019,
+      "genre": "Psychological Drama",
+      "director": "Todd Phillips",
+      "duration": 122,
+      "rating": 8.4,
+      "poster": "https://example.com/posters/joker.jpg"
+    },
+    {
+      "id": 31,
+      "title": "Dunkerque",
+      "year": 2017,
+      "genre": "War",
+      "director": "Christopher Nolan",
+      "duration": 106,
+      "rating": 7.8,
+      "poster": "https://example.com/posters/dunkerque.jpg"
+    },
+    {
+      "id": 32,
+      "title": "Coraline",
+      "year": 2009,
+      "genre": "Animation",
+      "director": "Henry Selick",
+      "duration": 100,
+      "rating": 7.7,
+      "poster": "https://example.com/posters/coraline.jpg"
+    },
+    {
+  "id": "dcdd0fad-a94c-4810-8acc-5f108d3b18c3",
+  "title": "The Shawshank Redemption",
+  "year": 1994,
+  "director": "Frank Darabont",
+  "duration": 142,
+  "poster": "https://i.ebayimg.com/images/g/4goAAOSwMyBe7hnQ/s-l1200.webp",
+  "genre":"Drama",
+  "rating": 9.3
+},
+{
+  "id": "c8a7d63f-3b04-44d3-9d95-8782fd7dcfaf",
+  "title": "The Dark Knight",
+  "year": 2008,
+  "director": "Christopher Nolan",
+  "duration": 152,
+  "poster": "https://i.ebayimg.com/images/g/yokAAOSw8w1YARbm/s-l1200.jpg",
+  "genre":"Action", 
+  "rating": 9.0
+},
+{
+  "id": "5ad1a235-0d9c-410a-b32b-220d91689a08",
+  "title": "Inception",
+  "year": 2010,
+  "director": "Christopher Nolan",
+  "duration": 148,
+  "poster": "https://m.media-amazon.com/images/I/91Rc8cAmnAL._AC_UF1000,1000_QL80_.jpg",
+  "genre":"Action", 
+  "rating": 8.8
+},
+{
+  "id": "241bf55d-b649-4109-af7c-0e6890ded3fc",
+  "title": "Pulp Fiction",
+  "year": 1994,
+  "director": "Quentin Tarantino",
+  "duration": 154,
+  "poster": "https://www.themoviedb.org/t/p/original/vQWk5YBFWF4bZaofAbv0tShwBvQ.jpg",
+  "genre":"Crime", 
+  "rating": 8.9
+},
+{
+  "id": "9e6106f0-848b-4810-a11a-3d832a5610f9",
+  "title": "Forrest Gump",
+  "year": 1994,
+  "director": "Robert Zemeckis",
+  "duration": 142,
+  "poster": "https://i.ebayimg.com/images/g/qR8AAOSwkvRZzuMD/s-l1600.jpg",
+  "genre":"Drama", 
+  "rating": 8.8
+},
+{
+  "id": "7e3fd5ab-60ff-4ae2-92b6-9597f0308d1",
+  "title": "Gladiator",
+  "year": 2000,
+  "director": "Ridley Scott",
+  "duration": 155,
+  "poster": "https://img.fruugo.com/product/0/60/14417600_max.jpg",
+  "genre":"Action", 
+  "rating": 8.5
+},
+{
+  "id": "c906673b-3948-4402-ac7f-73ac3a9e3105",
+  "title": "The Matrix",
+  "year": 1999,
+  "director": "Lana Wachowski",
+  "duration": 136,
+  "poster": "https://i.ebayimg.com/images/g/QFQAAOSwAQpfjaA6/s-l1200.jpg",
+  "genre":"Action",
+  "rating": 8.7
+},
+{
+  "id": "b6e03689-cccd-478e-8565-d92f40813b13",
+  "title": "Interstellar",
+  "year": 2014,
+  "director": "Christopher Nolan",
+  "duration": 169,
+  "poster": "https://m.media-amazon.com/images/I/91obuWzA3XL._AC_UF1000,1000_QL80_.jpg",
+  "genre":"Adventure", 
+  "rating": 8.6
+},
+{
+  "id": "aa391090-b938-42eb-b520-86ea0aa3917b",
+  "title": "The Lord of the Rings: The Return of the King",
+  "year": 2003,
+  "director": "Peter Jackson",
+  "duration": 201,
+  "poster": "https://i.ebayimg.com/images/g/0hoAAOSwe7peaMLW/s-l1600.jpg",
+  "genre":"Action", 
+  "rating": 8.9
+},
+{
+  "id": "2e6900e2-0b48-4fb6-ad48-09c7086e54fe",
+  "title": "The Lion King",
+  "year": 1994,
+  "director": "Roger Allers, Rob Minkoff",
+  "duration": 88,
+  "poster": "https://m.media-amazon.com/images/I/81BMmrwSFOL._AC_UF1000,1000_QL80_.jpg",
+  "genre":"Animation", 
+  "rating": 8.5
+},
+{
+  "id": "04986507-b3ed-442c-8ae7-4c5df804f896",
+  "title": "The Avengers",
+  "year": 2012,
+  "director": "Joss Whedon",
+  "duration": 143,
+  "poster": "https://img.fruugo.com/product/7/41/14532417_max.jpg",
+  "genre":"Action", 
+  "rating": 8.0
+},
+{
+  "id": "7d2832f8-c70a-410e-8963-4c93bf36cc9c",
+  "title": "Jurassic Park",
+  "year": 1993,
+  "director": "Steven Spielberg",
+  "duration": 127,
+  "poster": "https://vice-press.com/cdn/shop/products/Jurassic-Park-Editions-poster-florey.jpg?v=1654518755&width=1024",
+  "genre":"Adventure", 
+  "rating": 8.1
+},
+{
+  "id": "ccf36f2e-8566-47f7-912d-9f4647250bc7",
+  "title": "Titanic",
+  "year": 1997,
+  "director": "James Cameron",
+  "duration": 195,
+  "poster": "https://i.pinimg.com/originals/42/42/65/4242658e6f1b0d6322a4a93e0383108b.png",
+  "genre":"Drama", 
+  "rating": 7.8
+},
+{
+  "id": "8fb17ae1-bdfe-45e5-a871-4772d7e526b8",
+  "title": "The Social Network",
+  "year": 2010,
+  "director": "David Fincher",
+  "duration": 120,
+  "poster": "https://i.pinimg.com/originals/7e/37/b9/7e37b994b613e94cba64f307b1983e39.jpg",
+  "genre":"Biography", 
+  "rating": 7.7
+},
+{
+  "id": "6a360a18-c645-4b47-9a7b-2a71babbf3e0",
+  "title": "Avatar",
+  "year": 2009,
+  "director": "James Cameron",
+  "duration": 162,
+  "poster": "https://i.etsystatic.com/35681979/r/il/dfe3ba/3957859451/il_fullxfull.3957859451_h27r.jpg",
+  "genre":"Action", 
+  "rating": 7.8
+}]
