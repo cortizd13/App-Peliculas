@@ -1,8 +1,15 @@
 
 import { api } from "./api";
 
-export async function getMovies ()  {
-  const { data } = await api.get('/movies')
+
+
+export async function getMovies (name?: string, genre?:string)  {
+  const { data } = await api.get('/movies', {
+    params: {
+      name, 
+      genre
+    }
+  })
   return data
 }
 

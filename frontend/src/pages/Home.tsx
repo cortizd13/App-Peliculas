@@ -10,11 +10,11 @@ export function HomePage () {
 
 
   return(
-    <body className="bg-black">
+    <div className="bg-black min-h-screen">
       <Navbar />
       <HeroSection/>
       <GridMovie/>
       <Footer/>
-    </body>
+    </div>
   )
 }

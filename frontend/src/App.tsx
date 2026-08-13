@@ -1,12 +1,12 @@
 import { MoviesProvider } from "./context/MovieContext";
-import { HomePage } from "./pages/Home";
+import { Router } from "./router/Router";
 
 
 
 function App() {
   return(
     <MoviesProvider>
-      <HomePage/>
+      <Router/>
     </MoviesProvider>
   )
 }

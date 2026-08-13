@@ -10,7 +10,9 @@ export function CardMovie ({ movie }: Props) {
     <div className="bg-zinc-900 border border-zinc-800 rounded-md shadow-lg shadow-black/40 flex flex-col justify-between overflow-hidden">
   <img 
     src={movie.poster} 
-    alt={`Poster de ${movie.title}`} 
+    alt={`Poster de ${movie.title}`}
+    loading="lazy"
+    decoding="async" 
     className="w-full h-80 object-cover"
   />
   <div className="px-5 py-3 flex flex-col gap-1">
