@@ -18,7 +18,7 @@ export class MovieModel {
     if (title) {
       const lowerTitle = title.toLowerCase()
 
-      const [titles] = await connection.query('select bin_to_uuid(id) as id, title, year, genre, director, duration,rating,poster from movies  where lower(title) = ?', [lowerTitle])
+      const [titles] = await connection.query('select bin_to_uuid(id) as id, title, year, genre, director, duration,rating,poster from movies  where lower(title) LIKE ?', [`%${lowerTitle}%`])
 
       if (titles.length === 0) return []
 

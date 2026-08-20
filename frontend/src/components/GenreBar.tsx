@@ -1,9 +1,10 @@
-import { useMovies } from "../hooks/useMovies"
+import type { Movie } from "../types/movie"
 
+interface Props {
+  movies: Movie[]
+}
 
-export function GenreBar () {
-
-  const { movies } = useMovies()
+export function GenreBar ({ movies }: Props) {
 
   const genres:string[] = [ ...new Set(movies.map(movie => movie.genre)) ].sort()
 
