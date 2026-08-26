@@ -8,7 +8,7 @@ export function GenreBar () {
   const { genres } = useGenres()
 
   return(
-    <select className="bg-zinc-900 border-zinc-700 text-white placeholder:text-zinc-500 rounded-md px-4 py-1 " value={currentGenre } onChange={(e) => handleFilter("Genre",e.target.value)}>
+    <select className="bg-zinc-900 border-zinc-700 text-white placeholder:text-zinc-500 rounded-md px-4 py-1 " value={currentGenre } onChange={(e) => handleFilter("genre",e.target.value)}>
       <option value="">All Genres</option>
       {
         genres.map(genre => (
