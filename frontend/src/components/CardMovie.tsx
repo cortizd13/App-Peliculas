@@ -7,7 +7,7 @@ interface Props {
 
 export function CardMovie ({ movie }: Props) {
   return(
-    <div className="bg-zinc-900 border border-zinc-800 rounded-md shadow-lg shadow-black/40 flex flex-col justify-between overflow-hidden">
+    <article className="bg-zinc-900 border border-zinc-800 rounded-md shadow-lg shadow-black/40 flex flex-col justify-between overflow-hidden">
   <img 
     src={movie.poster} 
     alt={`Poster de ${movie.title}`}
@@ -23,6 +23,6 @@ export function CardMovie ({ movie }: Props) {
       <p className="text-zinc-400">{movie.genre}</p>
     </div>
   </div>
-</div>
+</article>
   )
 }
