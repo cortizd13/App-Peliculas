@@ -15,7 +15,7 @@ export function HomePage () {
   return(
     <div className="bg-black min-h-screen">
       <Navbar />
-      <HeroSection movies={movies}/>
+      <HeroSection />
       <GridMovie movies={movies} loading={loading} error={error}/>
       <Footer/>
     </div>

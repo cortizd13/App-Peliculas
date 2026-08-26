@@ -1,17 +1,16 @@
 import { useEffect, useState } from "react";
 import { getMovies } from "../services/movies";
-import type { Movie } from "../types/movie";
 
 
 export function useMovies (title?: string, genre?: string) {
-  const [movies, setMovies] = useState<Movie[]>([])
+  const [movies, setMovies] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
     const fetchMovies = async () => {
       try {
-        const data = await getMovies({ title })
+        const data = await getMovies({ title, genre })
         setMovies(data)
       } catch (err) {
         console.error(err)
