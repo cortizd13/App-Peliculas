@@ -5,27 +5,22 @@ const connection = await mysql.createConnection(configLocal)
 
 export class MovieModel {
   static async getAll ({ genre, title }) {
+    let query = 'select bin_to_uuid(id) as id, title, year, genre, director, duration,rating,poster from movies'
+    const conditions = []
+    const params = []
     if (genre) {
-      const lowerGenre = genre.toLowerCase()
-
-      const [genres] = await connection.query('select bin_to_uuid(id) as id, title, year, genre, director, duration,rating,poster from movies  where lower(genre) = ?', [lowerGenre])
-
-      if (genres.length === 0) return []
-
-      return genres
+      conditions.push('LOWER(genre) = ?')
+      params.push(genre.toLowerCase())
     }
-
     if (title) {
-      const lowerTitle = title.toLowerCase()
-
-      const [titles] = await connection.query('select bin_to_uuid(id) as id, title, year, genre, director, duration,rating,poster from movies  where lower(title) LIKE ?', [`%${lowerTitle}%`])
-
-      if (titles.length === 0) return []
-
-      return titles
+      conditions.push('LOWER(title) LIKE ?')
+      params.push(`%${title.toLowerCase()}%`)
     }
+    if (conditions.length > 0) {
+      query += ' WHERE ' + conditions.join(' AND ')
+    }
+    const [movies] = await connection.query(query, params)
 
-    const [movies] = await connection.query('select bin_to_uuid(id) as id, title, year, genre, director, duration,rating,poster from movies ')
     return movies
   }
 
