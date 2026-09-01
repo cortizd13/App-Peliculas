@@ -10,8 +10,12 @@ export function CardMovie ({ movie }: Props) {
 
   const navigate = useNavigate()
 
+  const handlePropertyClick = () => {
+    navigate(`/${movie.id}`)
+  }
+
   return(
-    <article className="bg-zinc-900 border border-zinc-800 rounded-md shadow-lg shadow-black/40 flex flex-col justify-between overflow-hidden" onClick={() => navigate(`/${movie.id}`)}>
+    <article className="bg-zinc-900 border border-zinc-800 rounded-md shadow-lg shadow-black/40 flex flex-col justify-between overflow-hidden" onClick={handlePropertyClick}>
   <img 
     src={movie.poster} 
     alt={`Poster de ${movie.title}`}
