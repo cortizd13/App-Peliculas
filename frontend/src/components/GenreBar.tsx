@@ -1,5 +1,5 @@
 import { useGenres } from "../hooks/useGenres"
-import { useFilters } from "../hooks/filter"
+import { useFilters } from "../hooks/useFilter"
 
 export function GenreBar () {
 

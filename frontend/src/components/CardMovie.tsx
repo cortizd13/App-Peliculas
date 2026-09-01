@@ -11,7 +11,7 @@ export function CardMovie ({ movie }: Props) {
   const navigate = useNavigate()
 
   const handlePropertyClick = () => {
-    navigate(`/${movie.id}`)
+    navigate(`/movies/${movie.id}`)
   }
 
   return(

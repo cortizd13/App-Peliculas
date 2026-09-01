@@ -1,5 +1,5 @@
 import { Search } from "lucide-react";
-import { useFilters } from "../hooks/filter";
+import { useFilters } from "../hooks/useFilter";
 
 
 export function SearchBar () {
