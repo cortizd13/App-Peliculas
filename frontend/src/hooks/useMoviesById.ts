@@ -2,10 +2,13 @@ import { useEffect, useState } from "react";
 import type { Movie } from "../types/movie";
 import { getMoviesById } from "../services/movies";
 
-export function useMoviesById (id:string) {
-  const [movie, setMovie] = useState<Movie[] >([])
+export function useMoviesById (id:string | undefined) {
+  const [movie, setMovie] = useState<Movie | null >(null)
 
   useEffect(() => {
+
+    if (!id) return;
+
       const fetchMovies = async () => {
         try {
           const data = await getMoviesById(id)
