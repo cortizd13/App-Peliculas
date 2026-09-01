@@ -1,4 +1,5 @@
 
+import { useNavigate } from "react-router-dom"
 import type { Movie } from "../types/movie"
 
 interface Props {
@@ -6,8 +7,11 @@ interface Props {
 }
 
 export function CardMovie ({ movie }: Props) {
+
+  const navigate = useNavigate()
+
   return(
-    <article className="bg-zinc-900 border border-zinc-800 rounded-md shadow-lg shadow-black/40 flex flex-col justify-between overflow-hidden">
+    <article className="bg-zinc-900 border border-zinc-800 rounded-md shadow-lg shadow-black/40 flex flex-col justify-between overflow-hidden" onClick={() => navigate(`/${movie.id}`)}>
   <img 
     src={movie.poster} 
     alt={`Poster de ${movie.title}`}
