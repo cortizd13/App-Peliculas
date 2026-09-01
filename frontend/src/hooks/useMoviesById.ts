@@ -3,7 +3,7 @@ import type { Movie } from "../types/movie";
 import { getMoviesById } from "../services/movies";
 
 export function useMoviesById (id:string) {
-  const [movie, setMovie] = useState<Movie[]>([])
+  const [movie, setMovie] = useState<Movie | null>(null)
 
   useEffect(() => {
       const fetchMovies = async () => {
