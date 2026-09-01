@@ -1,7 +1,5 @@
-import { Footer } from "../components/Footer";
 import { GridMovie } from "../components/GridMovie";
 import { HeroSection } from "../components/HeroSection";
-import { Navbar } from "../components/Navbar";
 import { useMovies } from "../hooks/useMovies";
 import { useSearchParams } from "react-router-dom";
 
@@ -14,10 +12,8 @@ export function HomePage () {
 
   return(
     <div className="bg-black min-h-screen">
-      <Navbar />
       <HeroSection />
       <GridMovie movies={movies} loading={loading} error={error}/>
-      <Footer/>
     </div>
   )
 }

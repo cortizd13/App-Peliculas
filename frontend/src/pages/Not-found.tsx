@@ -1,12 +1,9 @@
 import { Link } from "react-router-dom";
 import { CircleAlert } from "lucide-react";
-import { Navbar } from "../components/Navbar";
-import { Footer } from "../components/Footer";
 
 export function NotFoundPage() {
   return (
     <div className="min-h-screen flex flex-col bg-black text-white">
-      <Navbar />
       <main className="flex flex-col items-center justify-center flex-1 gap-6 px-8 py-20 text-center">
         <div className="flex items-center gap-4">
           <span className="text-9xl font-bold text-red-500">4</span>
@@ -25,7 +22,6 @@ export function NotFoundPage() {
           Back to Home
         </Link>
       </main>
-      <Footer />
     </div>
   );
 }
