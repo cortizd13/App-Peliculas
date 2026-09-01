@@ -27,6 +27,6 @@ export class MovieModel {
   static async getById ({ id }) {
     const [movies] = await connection.query('select bin_to_uuid(id) as id, title, year, genre, director, duration,rating,poster from movies where BIN_TO_UUID(id) = ?', [id])
 
-    return movies
+    return movies[0]
   }
 }
