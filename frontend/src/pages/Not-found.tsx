@@ -3,7 +3,7 @@ import { CircleAlert } from "lucide-react";
 
 export function NotFoundPage() {
   return (
-    <div className="min-h-screen flex flex-col bg-black text-white">
+    <div className=" flex flex-col ">
       <main className="flex flex-col items-center justify-center flex-1 gap-6 px-8 py-20 text-center">
         <div className="flex items-center gap-4">
           <span className="text-9xl font-bold text-red-500">4</span>

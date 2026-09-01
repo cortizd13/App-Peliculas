@@ -11,7 +11,7 @@ export function HomePage () {
   const { movies, loading, error } = useMovies(title, genre)
 
   return(
-    <div className="bg-black min-h-screen">
+    <div >
       <HeroSection />
       <GridMovie movies={movies} loading={loading} error={error}/>
     </div>
