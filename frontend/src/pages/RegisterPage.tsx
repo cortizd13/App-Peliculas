@@ -40,7 +40,7 @@ export function RegisterPage () {
 
         <div className="flex justify-center gap-2">
           <p>Already have an account? </p>
-          <Link to='/login'>Sign in</Link>
+          <Link to='/login' className="text-[#FFB4AA]">Sign in</Link>
         </div>
       </form>
     </div>

@@ -15,4 +15,14 @@ export class MovieController {
     if (movie) return res.json(movie)
     res.status(404).json({ message: 'Movie not found' })
   }
+
+  createUser = async (req, res) => {
+    const { username, email, password } = req.body
+    try {
+      const user = await this.movieModel.createUser({ username, email, password })
+      res.send({ user })
+    } catch (e) {
+      res.status(400).send(e.message)
+    }
+  }
 }
