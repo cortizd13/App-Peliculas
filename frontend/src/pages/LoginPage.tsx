@@ -15,7 +15,7 @@ export function LoginPage () {
   const navigate = useNavigate()
   const location = useLocation()
   const state = location.state
-  const from = state.from ?? '/'
+  const from = state?.from ?? '/'
 
   function handleVisibility () {
     setShowPassword(!showPassword)
