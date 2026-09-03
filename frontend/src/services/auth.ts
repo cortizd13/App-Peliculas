@@ -1,6 +1,7 @@
+import type { UserLoginSchema, UserSchema } from "../types/user";
 import { api } from "./api";
 
-export async function register ({ username, email, password }) {
+export async function register ({ username, email, password }:UserSchema) {
   const { data } = await api.post('/register', {
     username,
     email,
@@ -10,7 +11,7 @@ export async function register ({ username, email, password }) {
   return data
 }
 
-export async function login({ email, password }) {
+export async function login({ email, password }:UserLoginSchema) {
   const { data } = await api.post('/login', {
     email,
     password
