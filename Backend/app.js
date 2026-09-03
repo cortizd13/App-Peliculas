@@ -6,6 +6,7 @@ import { MovieModel } from './models/mysql/movie.js'
 import morgan from 'morgan'
 import { createUserRoute } from './routes/user.js'
 import { UserModel } from './models/mysql/user.js'
+import cookieParser from 'cookie-parser'
 
 const app = express()
 app.disable('x-powered-by')
@@ -13,8 +14,13 @@ const port = process.env.PORT
 
 app.use(express.json())
 
-app.use(cors())
+app.use(cors({
+  origin: 'http://localhost:5173',
+  credentials: true
+}))
 app.use(morgan('dev'))
+app.use(cookieParser())
+
 
 app.use('/movies', createMovieRouter({ movieModel: MovieModel }))
 app.use('/', createUserRoute({ userModel: UserModel }))

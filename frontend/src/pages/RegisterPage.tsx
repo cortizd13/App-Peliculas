@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import type { User } from "../types/user";
+import type { UserSchema } from "../types/user";
 import { toast } from "sonner";
 import { createUser } from "../services/authUtils";
+import { Key, Lock, Mail, User } from "lucide-react";
 
 
 export function RegisterPage () {
 
-  const [form, setForm] = useState<User>({
+  const [form, setForm] = useState<UserSchema>({
     username: '',
     email:'',
     password:''
@@ -53,22 +54,44 @@ export function RegisterPage () {
         </div>
         <div className="flex flex-col gap-2">
           <label htmlFor="name">Nombre</label>
-          <input type="text" className="bg-black rounded-sm px-4 py-2" id="name" placeholder="John Doe" required name="username" value={form.username} onChange={handleChange}/>
+          <div className="relative w-full max-w-sm">
+            <div className="absolute top-2 left-2">
+              <User />
+            </div>
+            <input type="text" className="w-full bg-black rounded-sm px-10 py-2" id="name" placeholder="John Doe" required name="username" value={form.username} onChange={handleChange}/>
+          </div>
         </div>
 
         <div className="flex flex-col gap-2">
           <label htmlFor="email">Email Address</label>
-          <input type="text" className="bg-black rounded-sm px-4 py-2" id="email" placeholder="you@example.com"  required name="email" value={form.email} onChange={handleChange}/>
+          <div className="relative w-full max-w-sm">
+            <div className="absolute top-2 left-2">
+              <Mail />
+            </div>
+              <input type="text" className="w-full bg-black rounded-sm px-10 py-2" id="email" placeholder="you@example.com"  required name="email" value={form.email} onChange={handleChange}/>
+           
+          </div>
         </div>
 
         <div className="flex flex-col gap-2">
           <label htmlFor="password">Password</label>
-          <input type="password" className="bg-black rounded-sm px-4 py-2" id="password" placeholder="*********" required name="password" value={form.password} onChange={handleChange}/>
+          <div className="relative w-full max-w-sm">
+            <div className="absolute top-2 left-2">
+              <Lock />
+            </div>
+            <input type="password" className="w-full bg-black rounded-sm px-10 py-2" id="password" placeholder="*********" required name="password" value={form.password} onChange={handleChange}/>
+          </div>
         </div>
 
         <div className="flex flex-col gap-2">
           <label htmlFor="password-confirm">Confirm Password</label>
-          <input type="password" className="bg-black rounded-sm px-4 py-2" id="password-confirm" placeholder="********" required value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)}/>
+          <div className="relative w-full max-w-sm">
+            <div className="absolute top-2 left-2">
+              <Key />
+            </div>
+            <input type="password" className="w-full bg-black rounded-sm px-10 py-2" id="password-confirm" placeholder="********" required value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)}/>
+          </div>
+          
         </div>
 
         <div className="flex  gap-2">

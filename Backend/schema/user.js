@@ -18,8 +18,28 @@ const userSchema = z.object({
   }).min(6, 'Password must be at least 6 characters')
 })
 
+const loginSchema = z.object({
+  email: z.string({
+    invalid_type_error: 'Email must be a string',
+    required_error: 'Email is required'
+  }).email(),
+
+  password: z.string({
+    invalid_type_error: 'Password must be a string',
+    required_error: 'Password is required'
+  })
+    .min(6, 'Password must be at least 6 characters')
+})
+
 export function validateUser (object) {
   const result = userSchema.safeParse(object)
+  if (result.error) throw new Error(result.error.issues[0].message)
+
+  return result.data
+}
+
+export function validateLogin (object) {
+  const result = loginSchema.safeParse(object)
   if (result.error) throw new Error(result.error.issues[0].message)
 
   return result.data

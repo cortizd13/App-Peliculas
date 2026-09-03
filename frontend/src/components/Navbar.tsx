@@ -1,7 +1,10 @@
 
 import { Link, NavLink } from "react-router-dom";
+import { useAuth } from "../hooks/useAuth";
 
 export function Navbar (){
+
+  const { user } = useAuth()
 
   return(
     <nav className="flex justify-between px-8 py-5 items-center bg-zinc-950 border-zinc-800 ">
@@ -21,10 +24,18 @@ export function Navbar (){
         </div>
       </div> */}
 
-      <div className="flex gap-5 ">
-        <Link className='rounded-lg bg-zinc-950 shadow-md text-white px-6 py-2 transition hover:bg-zinc-900' to='/register'>Register</Link>
-        <Link className='bg-[#E50914] px-6 py-2 rounded-md shadow-md text-white font-medium transition hover:bg-[#C0000C]' to='/login'>Login</Link>
-      </div>
+      {
+        user ? 
+          <div className="flex gap-5">
+            <p>{user.username}</p>
+            <Link to='/profile'>Mi Perfil</Link>
+          </div>
+          :
+          <div className="flex gap-5 ">
+            <Link className='rounded-lg bg-zinc-950 shadow-md text-white px-6 py-2 transition hover:bg-zinc-900' to='/register'>Register</Link>
+            <Link className='bg-[#E50914] px-6 py-2 rounded-md shadow-md text-white font-medium transition hover:bg-[#C0000C]' to='/login'>Login</Link>
+        </div>
+      }
     </nav>
   )
 }

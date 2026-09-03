@@ -6,4 +6,10 @@ export class UserModel {
 
     return user
   }
+
+  static async loginUser ({ email, password }) {
+    const user = await userRepository.login({ email, password })
+
+    return user
+  }
 }
