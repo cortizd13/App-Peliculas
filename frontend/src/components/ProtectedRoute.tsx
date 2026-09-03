@@ -1,7 +1,8 @@
 import { Navigate, useLocation } from "react-router-dom";
 import { useAuth } from "../hooks/useAuth";
+import type { ReactNode } from "react";
 
-export function ProtecteRoute ({ children }) {
+export function ProtecteRoute ({ children }: {children: ReactNode}) {
   const location = useLocation()
   const { user, loading } = useAuth()
   // console.log(user)

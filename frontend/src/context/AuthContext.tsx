@@ -1,10 +1,13 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useEffect, useState, type ReactNode } from "react";
 import type { UserSchema } from "../types/user";
 import { checkLogin } from "../services/auth";
+import type { AuthContextType } from "../types/context";
 
-export const authContext = createContext(null)
 
-export function AuthProvider ({ children }) {
+
+export const authContext = createContext<AuthContextType | null>(null)
+
+export function AuthProvider ({ children }: {children: ReactNode}) {
   const [ user, setUser ] = useState<UserSchema | null>(null)
   const [ loading, setLoading ] = useState(true)
 
