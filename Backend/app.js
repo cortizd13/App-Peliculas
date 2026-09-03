@@ -11,11 +11,15 @@ import cookieParser from 'cookie-parser'
 const app = express()
 app.disable('x-powered-by')
 const port = process.env.PORT
+const allowedOrigin = [
+  'http://localhost:5173',
+  'https://app-peliculas-five.vercel.app/'
+]
 
 app.use(express.json())
 
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: allowedOrigin,
   credentials: true
 }))
 app.use(morgan('dev'))
