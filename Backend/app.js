@@ -13,7 +13,7 @@ app.disable('x-powered-by')
 const port = process.env.PORT
 const allowedOrigin = [
   'http://localhost:5173',
-  'https://app-peliculas-five.vercel.app/'
+  'https://app-peliculas-five.vercel.app'
 ]
 
 app.use(express.json())
