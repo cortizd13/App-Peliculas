@@ -15,16 +15,16 @@ export function ProfilePage () {
             <div className="grid grid-cols-2 gap-8">
               <div className="flex flex-col gap-1">
                 <label htmlFor="username">Username</label>
-                <input className="bg-[#2A292A] py-2 px-4 rounded-md" type="text" id="username" value={user.username} required/>
+                <input className="bg-[#2A292A] py-2 px-4 rounded-md" type="text" id="username" value={user?.username} required/>
               </div>
               <div className="flex flex-col gap-1">
                 <label htmlFor="email">Email</label>
-                <input className="bg-[#2A292A] py-2 px-4 rounded-md" type="text" id="email" value={user.email} required/>
+                <input className="bg-[#2A292A] py-2 px-4 rounded-md" type="text" id="email" value={user?.email} required/>
               </div>
             </div>
             <div className="flex flex-col gap-1">
               <label htmlFor="password">Password</label>
-              <input className="bg-[#2A292A] py-2 px-4 rounded-md" type="password" id="password" value={user.password} required/>
+              <input className="bg-[#2A292A] py-2 px-4 rounded-md" type="password" id="password" value={user?.password} required/>
             </div>  
             <button type="submit" className="bg-[#E50914] rounded-md py-2 cursor-pointer text-lg hover:bg-[#C0000C]">Save Changes</button>
           </form>
