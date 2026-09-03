@@ -1,8 +1,9 @@
 import { login, register } from "./auth";
 import axios from "axios";
 import { toast } from "sonner";
+import type { UserLoginSchema, UserSchema } from "../types/user";
 
-export const createUser = async ({ username, email, password }) => {
+export const createUser = async ({ username, email, password }:UserSchema) => {
   
   try {
     const data = await register({ username,email, password })
@@ -17,7 +18,7 @@ export const createUser = async ({ username, email, password }) => {
   }
 }
 
-export const loginUser = async ({ email, password }) => {
+export const loginUser = async ({ email, password }:UserLoginSchema) => {
   try {
     const data = await login({ email, password })
     return data
